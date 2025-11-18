@@ -127,6 +127,14 @@
       "created_at": "2023-09-19T11:35:36Z",
       "repoId": 102724150,
       "pullRequestNo": 346
+    },
+    {
+      "name": "fabionardelli",
+      "id": 48182427,
+      "comment_id": 3548001314,
+      "created_at": "2025-11-18T14:56:46Z",
+      "repoId": 102724150,
+      "pullRequestNo": 358
     }
   ]
 }
