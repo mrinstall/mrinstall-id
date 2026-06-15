@@ -16,13 +16,14 @@ body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-.panel, .modal-content {
+.panel, .modal-content, .login, .registration {
   background: rgba(255, 255, 255, 0.03) !important;
   backdrop-filter: blur(24px) !important;
   -webkit-backdrop-filter: blur(24px) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
   color: #ffffff !important;
+  border-radius: 12px;
 }
 
 .panel-heading, .modal-header {
@@ -95,7 +96,7 @@ a:hover {
   margin-top: 15px;
 }
 
-.login {
+.login, .registration {
   max-width: 450px;
   margin: 50px auto;
   float: none;
