@@ -126,11 +126,11 @@
     "menu_item04": " Sign Out"
   },
   "footer": {
-    "cred_date": "2018 ©",
-    "author": "GING DIT",
-    "university": " - Technical University of Madrid (UPM)",
-    "vish": "The use of VISH services is subject to the acceptance of the",
-    "fiware": "The use of FIWARE Lab services is subject to acceptance of the",
+    "cred_date": "2026 ©",
+    "author": "Mr Install ID",
+    "university": "",
+    "vish": "The use of Mr Install ID services is subject to the acceptance of the",
+    "fiware": "The use of Mr Install ID services is subject to acceptance of the",
     "condit02": "Terms and Conditions",
     "condit03": "Privacy Policy and",
     "condit04": "Cookies Policy"
@@ -374,7 +374,7 @@
       "content": "It's been a year since you changed the password. For security reasons and to continue using this portal, please change it.",
       "continue_btn": "Continue"
     },
-    "enable_tfa" : {
+    "enable_tfa": {
       "title": "Two factor authentication",
       "content01": "The verification has failed because the token introduced is not valid. Please, check that the date and hour in your device and try again.",
       "content02": "If you want to enable the two factor authentication, follow these steps:",
@@ -878,13 +878,13 @@
       }
     },
     "organizations": {
-      "assign_role_organization_row" :{
+      "assign_role_organization_row": {
         "li01": "Owner",
         "li02": "Member"
       }
     },
     "users": {
-      "org_role_user_row" :{
+      "org_role_user_row": {
         "li01": "Owner",
         "li02": "Member"
       }
