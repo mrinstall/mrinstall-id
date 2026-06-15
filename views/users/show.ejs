@@ -4,7 +4,7 @@
 
         <header>
             <h3 class="name">
-              <% if (user.extra.visible_attributes.includes('username')) { -%>
+              <% if (user.extra && user.extra.visible_attributes && user.extra.visible_attributes.includes('username')) { -%>
                 <%= user.username %>
               <%}%>
 
@@ -13,14 +13,14 @@
                 <% } -%>
             </h3>
             <div class="logo">
-              <% if ((user.extra.visible_attributes != null) && (user.extra.visible_attributes.includes('image'))){ -%>
+              <% if (user.extra && user.extra.visible_attributes && user.extra.visible_attributes.includes('image')){ -%>
                 <img alt="user logo" src="<%= user.image %>">
               <% }-%>
             </div>
         </header>
         <div class="panel panel-default">
             <div class="panel-body">
-              <% if (user.extra.visible_attributes.includes('description')) { -%>
+              <% if (user.extra && user.extra.visible_attributes && user.extra.visible_attributes.includes('description')) { -%>
 
                 <div class="description">
                     <h5>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <%}-%>
-                <% if (user.extra.visible_attributes.includes('website')){ -%>
+                <% if (user.extra && user.extra.visible_attributes && user.extra.visible_attributes.includes('website')){ -%>
 
                 <% if (user.website) { -%>
                     <div class="contact_us">
@@ -58,7 +58,7 @@
                 <% } -%>
                 <%} -%>
 
-                <% if  (user.extra.visible_attributes.includes('identity_attributes')){%>
+                <% if  (user.extra && user.extra.visible_attributes && user.extra.visible_attributes.includes('identity_attributes')){%>
                     <% if (identity_attributes.enabled)  { %>
                     <div class="extra">
                         <h4 class="panel-title">

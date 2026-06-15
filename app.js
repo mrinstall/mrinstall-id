@@ -175,7 +175,7 @@ if (!config.headless) {
     }),
     i18n({
       translationsPath: translation_merger.get_merge_path(), // eslint-disable-line snakecase/snakecase
-      siteLangs: ['de', 'en', 'es', 'ja', 'ko'], // eslint-disable-line snakecase/snakecase
+      siteLangs: ['de', 'en', 'es', 'ja', 'ko', 'vi'], // eslint-disable-line snakecase/snakecase
       textsVarName: 'translation', // eslint-disable-line snakecase/snakecase
       browserEnable: true, // eslint-disable-line snakecase/snakecase
       defaultLang: config.lang.default_lang || 'en' // eslint-disable-line snakecase/snakecase

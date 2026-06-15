@@ -192,7 +192,7 @@ config.site = {
 
 // Config language
 config.lang = {
-  default_lang: 'en'
+  default_lang: 'vi'
 };
 
 // Config eIDAS Authentication
