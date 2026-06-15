@@ -11,82 +11,73 @@
 }
 
 body {
-  background-color: #030303;
-  color: #ffffff;
+  background-color: #f3f4f6;
+  color: #1f2937;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 .panel, .modal-content, .login, .registration {
-  background: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(24px) !important;
-  -webkit-backdrop-filter: blur(24px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
-  color: #ffffff !important;
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01) !important;
+  color: #1f2937 !important;
   border-radius: 12px;
 }
 
 .panel-heading, .modal-header {
-  background: rgba(0, 0, 0, 0.2) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: #ffffff !important;
+  background: #f9fafb !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  color: #111827 !important;
 }
 
 .form-control {
-  background: rgba(0, 0, 0, 0.3) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: #ffffff !important;
-  backdrop-filter: blur(8px) !important;
+  background: #f9fafb !important;
+  border: 1px solid #d1d5db !important;
+  color: #1f2937 !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .form-control:focus {
   outline: none !important;
-  border-color: rgba(245, 158, 11, 0.5) !important;
-  box-shadow: 0 0 12px rgba(245, 158, 11, 0.2) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2) !important;
+  background: #ffffff !important;
 }
 
 .btn-primary {
   background-color: #f59e0b !important;
   border-color: #d97706 !important;
-  color: #000000 !important;
-  font-weight: bold;
+  color: #ffffff !important;
+  font-weight: 600;
 }
 
 .btn-primary:hover {
-  background-color: #fbbf24 !important;
+  background-color: #d97706 !important;
 }
 
-.text-gradient-gold {
-  background: linear-gradient(to right, #fce68a, #f59e0b, #d97706);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Fix text colors for dark theme */
+/* Fix text colors for light theme */
 h1, h2, h3, h4, h5, h6, label {
-  color: #ffffff !important;
+  color: #111827 !important;
 }
 
 p, span, div, td, th {
-  color: #d1d5db;
+  color: #374151;
 }
 
 a {
-  color: #f59e0b;
+  color: #d97706;
 }
 
 a:hover {
-  color: #fbbf24;
+  color: #b45309;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #ffffff;
+    color: #4b5563;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #f59e0b;
+    color: #d97706;
 }
 
 .presentation .media {
