@@ -1,0 +1,96 @@
+/****************************** Custom styles rewrite */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-gold-100: #fef3c7;
+  --color-gold-300: #fce68a;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d97706;
+  --color-gold-900: #78350f;
+}
+
+body {
+  background-color: #030303;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.panel, .modal-content {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.panel-heading, .modal-header {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+}
+
+.form-control {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(8px) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.form-control:focus {
+  outline: none !important;
+  border-color: rgba(245, 158, 11, 0.5) !important;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.2) !important;
+}
+
+.btn-primary {
+  background-color: #f59e0b !important;
+  border-color: #d97706 !important;
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #fbbf24 !important;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(to right, #fce68a, #f59e0b, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Fix text colors for dark theme */
+h1, h2, h3, h4, h5, h6, label {
+  color: #ffffff !important;
+}
+
+p, span, div, td, th {
+  color: #d1d5db;
+}
+
+a {
+  color: #f59e0b;
+}
+
+a:hover {
+  color: #fbbf24;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f59e0b;
+}
+
+.presentation .media {
+  height: auto;
+}
+.presentation .media footer {
+  margin-top: 15px;
+}

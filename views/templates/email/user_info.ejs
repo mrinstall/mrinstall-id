@@ -1,6 +1,8 @@
-<p><%=translation.templates.email.user_info.content01%></p>
-<p><%=translation.templates.email.user_info.content02%> <%= email %> </p>
-<p><%=translation.templates.email.user_info.content03%> <%= password %> </p>
-<p><%=translation.templates.email.user_info.content04%> <%= username %> </p>
-<p><%=translation.templates.email.user_info.content05%> </p>
-<p><a href= <%= link %> target="_blank"><%= link %></a></p>
+<p style="color: #f59e0b; font-size: 11px; font-weight: 700; letter-spacing: 1px; margin-bottom: 15px;">[THÔNG TIN TÀI KHOẢN]</p>
+<p style="color: #ffffff; font-size: 15px; font-weight: 500; margin-bottom: 20px;"><%=translation.templates.email.user_info.content01%></p>
+<div style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px;">
+  <p style="margin: 0 0 10px 0; color: #d1d5db; font-size: 14px;"><strong>Email:</strong> <span style="color: #ffffff;"><%= email %></span></p>
+  <p style="margin: 0 0 10px 0; color: #d1d5db; font-size: 14px;"><strong>Username:</strong> <span style="color: #ffffff;"><%= username %></span></p>
+  <p style="margin: 0; color: #d1d5db; font-size: 14px;"><strong>Password:</strong> <span style="font-family: monospace; color: #f59e0b;"><%= password %></span></p>
+</div>
+<p style="color: #9ca3af; font-size: 13px; line-height: 1.5;"><%=translation.templates.email.user_info.content05%></p>

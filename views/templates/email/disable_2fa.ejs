@@ -1,5 +1,8 @@
-<p><%=translation.templates.email.disable_2fa.content01%> <%= name %>!</p>
-
-<p><%=translation.templates.email.disable_2fa.content02%></p>
-
-<p><a href= <%= link %> target="_blank"><%=translation.templates.email.disable_2fa.content03%></a></p>
+<p style="color: #ef4444; font-size: 11px; font-weight: 700; letter-spacing: 1px; margin-bottom: 15px;">[TẮT BẢO MẬT 2 LỚP]</p>
+<p style="color: #ffffff; font-size: 15px; font-weight: 500; margin-bottom: 10px;"><%=translation.templates.email.disable_2fa.content01%> <%= name %>!</p>
+<p style="color: #d1d5db; font-size: 14px; line-height: 1.6; margin-bottom: 20px;"><%=translation.templates.email.disable_2fa.content02%></p>
+<p>
+  <a href="<%= link %>" style="display: inline-block; padding: 12px 24px; background-color: #ef4444; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 14px;">
+    <%=translation.templates.email.disable_2fa.content03%>
+  </a>
+</p>

@@ -1,0 +1,51 @@
+<header class="navbar navbar-default navbar-fixed-top glass-panel" style="background: rgba(0,0,0,0.4); backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.08);">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" style="border-color: rgba(255,255,255,0.1);">
+        <span class="fa fa-angle-double-down" style="color: #f59e0b;"></span>
+      </button>
+      <div class="logo-header" style="margin-left: 20px; display: flex; align-items: center; height: 50px;">
+        <a href="/home/" class="brand" style="text-decoration: none; font-size: 20px; font-weight: bold; letter-spacing: 0.5px;">
+          <span style="color: #ffffff;">Mr Install</span><span class="text-gradient-gold" style="background: linear-gradient(to right, #fce68a, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-left: 4px;">ID</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="header-navbar-collapse">
+      <div id="user_info" class="nav navbar-nav navbar-right" style="margin-right: 15px;">
+        <div id="profile_editor_switcher" class="dropdown switcher_bar" tabindex="1">
+          <%if(session.user){%>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #ffffff;">
+              <img alt="User" src="<%= session.user.image %>" style="border: 1px solid rgba(255,255,255,0.1);">
+              <%= session.user.username %>
+              <i class="fa fa-angle-double-down" style="color: #f59e0b;"></i>
+            </a>
+            <ul id="editor_list" class="dropdown-menu multi-level dropdown-menu-right glass-panel" role="menu" aria-labelledby="dropdownMenu" style="background: rgba(10,10,10,0.95); border: 1px solid rgba(255,255,255,0.1);">
+              <li>
+                <a href="/idm/users/<%= session.user.id %>" style="color: #d1d5db;">
+                  <i class="fa fa-user"></i><%=translation.header.menu_item01%>
+                </a>
+              </li>
+              <li>
+                <a href="/idm/settings" style="color: #d1d5db;">
+                  <i class="fa fa-cog"></i><%=translation.header.menu_item02%>
+                </a>
+              </li>
+              <li class="divider" style="background-color: rgba(255,255,255,0.1);"></li>
+              <li>
+                <a href="/idm/help_about" style="color: #d1d5db;">
+                  <i class="fa fa-question-circle"></i><%=translation.header.menu_item03%>
+                </a>
+              </li>
+              <li>
+                <a href="/auth/logout?_method=DELETE" onclick="" style="color: #ef4444;">
+                  <i class="fa fa-sign-out-alt"></i><%=translation.header.menu_item04%>
+                </a>
+              </li>
+            </ul>
+          <%}%>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -186,8 +186,8 @@ config.mail = {
 
 // Config themes
 config.site = {
-  title: 'Identity Manager',
-  theme: 'default'
+  title: 'Mr Install ID',
+  theme: 'mrinstall'
 };
 
 // Config language
