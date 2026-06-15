@@ -12,10 +12,10 @@
         "title04": "Applications",
         "title05": "Organizations",
         "title06": "You're all set!",
-        "content01": "Welcome to the FIWARE's Mr Install ID Identity Manager. This is a basic tour that will guide you through the basics.",
+        "content01": "Welcome to the Mr Install ID's Mr Install ID Identity Manager. This is a basic tour that will guide you through the basics.",
         "content02": "Use this section to access your profile, the settings and to sign out.",
         "content03": "You can find the different sections of Mr Install ID in this sidebar.",
-        "content04": "Applications are the experiments with the FIWARE technology you participate on (e.g. as an owner or purchaser). This table shows a quick summary of them.",
+        "content04": "Applications are the experiments with the Mr Install ID technology you participate on (e.g. as an owner or purchaser). This table shows a quick summary of them.",
         "content05": "Organizations are basically groups of users. They come in very handy when you want to authorize several users in your application at once. A quick summary of them can be found in this table.",
         "content06": "<p>You finished the basics Tour! You can now head on to the next Tour and learn more about the most important settings of your profile or exit this tutorial and start experimenting yourself.</p><p>Thank you for using Mr Install ID!</p><a href='#' class='next-tour' data-current-tour='initTour' data-next-tour='profileTour'> > Go to Profile Tour</a>"
       },
@@ -126,22 +126,22 @@
     "menu_item04": " Sign Out"
   },
   "footer": {
-    "cred_date": "2018 ©",
-    "author": "GING DIT",
-    "university": " - Technical University of Madrid (UPM)",
-    "vish": "The use of VISH services is subject to the acceptance of the",
-    "fiware": "The use of FIWARE Lab services is subject to acceptance of the",
-    "condit02": "Terms and Conditions",
-    "condit03": "Privacy Policy and",
-    "condit04": "Cookies Policy"
+    "cred_date": "2026 ©",
+    "author": "Mr Install",
+    "university": "",
+    "vish": "Việc sử dụng dịch vụ này đồng nghĩa với việc bạn chấp nhận",
+    "fiware": "Việc sử dụng dịch vụ của Mr Install ID đồng nghĩa với việc bạn chấp nhận",
+    "condit02": "Điều khoản và Điều kiện",
+    "condit03": "Chính sách Bảo mật và",
+    "condit04": "Chính sách Cookie"
   },
   "help_about_items": {
     "title01": " Documentation",
     "content01": "If you want to learn more about this Identity Manager and how to use it, take a look at the links below:",
-    "item01": " FIWARE Catalogue",
+    "item01": " Mr Install ID Catalogue",
     "item02": " Complete documentation for installing, administrating and using the Identity Manager in ReadTheDocs",
     "item03": " Source code of the project in GitHub",
-    "item04": " FIWARE Academy",
+    "item04": " Mr Install ID Academy",
     "title02": " Learning Tours",
     "content02": "Missed one of the tours? Want to take them again? This is the complete list of tours that will guide you from the basics of this Identity Manager to some of the most advanced features.",
     "tour01": " Basics Tour: get to know the Welcome page.",
@@ -165,22 +165,22 @@
   },
   "auth": {
     "login": {
-      "title": "Sign In",
-      "alert01": "Session expired",
-      "alert02": "Password changed. Please sign in again to continue.",
-      "alert03": "Invalid user name or password.",
+      "title": "Đăng nhập",
+      "alert01": "Phiên đã hết hạn",
+      "alert02": "Mật khẩu đã thay đổi. Vui lòng đăng nhập lại để tiếp tục.",
+      "alert03": "Tên đăng nhập hoặc mật khẩu không hợp lệ.",
       "label01": "Email",
-      "label02": "Password",
-      "required_field": "This is a required field.",
-      "checkbox": "remember me",
-      "loginin_btn": "Sign In",
-      "link01": "Sign up",
-      "link02": "Forgot password",
-      "link03": "Confirmation not recieved?"
+      "label02": "Mật khẩu",
+      "required_field": "Đây là trường bắt buộc.",
+      "checkbox": "Ghi nhớ đăng nhập",
+      "loginin_btn": "Đăng nhập",
+      "link01": "Đăng ký",
+      "link02": "Quên mật khẩu",
+      "link03": "Chưa nhận được xác nhận?"
     },
     "presentation": {
       "title": "Identity Manager",
-      "subtitle01": "Welcome to an implementation of FIWARE Identity Manager developed by DIT-UPM.",
+      "subtitle01": "Welcome to an implementation of Mr Install ID Identity Manager developed by DIT-UPM.",
       "subtitle02": "You can customize this sign in page as well as any other style/layout in this web service. Check customization documentation to learn how to do it!",
       "signup_btn": "Sign up",
       "docs_btn": "Check documentation"
@@ -374,7 +374,7 @@
       "content": "It's been a year since you changed the password. For security reasons and to continue using this portal, please change it.",
       "continue_btn": "Continue"
     },
-    "enable_tfa" : {
+    "enable_tfa": {
       "title": "Two factor authentication",
       "content01": "The verification has failed because the token introduced is not valid. Please, check that the date and hour in your device and try again.",
       "content02": "If you want to enable the two factor authentication, follow these steps:",
@@ -693,7 +693,7 @@
       "popover02_title": "Application Callback URL",
       "popover03_body": "Mr Install ID will redirect to this endpoint if the user agent has signed in through OAuth and it is needed to delete also de user session in Mr Install ID. If you don't configure this parameter, the user agent will be redirected to the endpoint specified before in url field.",
       "popover03_title": "Application Sign Out Callback",
-      "popover04_body": "Select which grant types would accept the application in order to authorize users using Oauth 2.0 protocol. Visit <a href='http://fiware-idm.readthedocs.io/en/latest/api/#def-oauth2Auth' title='Oauth info'>Mr Install ID Docs</a> for more information",
+      "popover04_body": "Select which grant types would accept the application in order to authorize users using Oauth 2.0 protocol. Visit <a href='http://mrinstall-idm.readthedocs.io/en/latest/api/#def-oauth2Auth' title='Oauth info'>Mr Install ID Docs</a> for more information",
       "popover04_title": "OAuth Grant Types",
       "popover05_body": "Select if you also want to allow authentication with Open ID Connect. ",
       "popover05_title": "Open ID Connect"
@@ -738,7 +738,7 @@
       "popover02_title": "Application Callback URL",
       "popover03_body": "Mr Install ID will redirect to this endpoint if the user agent has signed in through OAuth and it is needed to delete also de user session in Mr Install ID. If you don't configure this parameter, the user agent will be redirected to the endpoint specified before in url field.",
       "popover03_title": "Application Sign Out Callback",
-      "popover04_body": "Select which grant types would accept the application in order to authorize users using Oauth 2.0 protocol. Visit <a href='http://fiware-idm.readthedocs.io/en/latest/api/#def-oauth2Auth' title='Oauth info'>Mr Install ID Docs</a> for more information.",
+      "popover04_body": "Select which grant types would accept the application in order to authorize users using Oauth 2.0 protocol. Visit <a href='http://mrinstall-idm.readthedocs.io/en/latest/api/#def-oauth2Auth' title='Oauth info'>Mr Install ID Docs</a> for more information.",
       "popover04_title": "OAuth Grant Types",
       "popover05_body": "Select who is going be the provider of the application: yourself or one of the organizations in which you are owner.",
       "popover05_title": "Owner application",
@@ -843,48 +843,48 @@
         "content01": "Technical University of Madrid (UPM)"
       },
       "activate": {
-        "subject": "Welcome to Mr Install ID",
-        "content01": "Hello",
-        "content02": "Welcome to Mr Install ID! By clicking on the link 'I accept' below, you state that you have read and accepted the our Terms and Conditions and the creation of your account will be confirmed:",
-        "content03": "I accept"
+        "subject": "Chào mừng bạn đến với Mr Install ID",
+        "content01": "Xin chào",
+        "content02": "Chào mừng bạn đến với Mr Install ID! Bằng cách nhấp vào liên kết 'Tôi đồng ý' bên dưới, bạn xác nhận rằng bạn đã đọc và đồng ý với Điều khoản và Điều kiện của chúng tôi và việc tạo tài khoản của bạn sẽ được xác nhận:",
+        "content03": "Tôi đồng ý"
       },
       "change_email": {
-        "subject": "Account email change requested",
-        "content01": "Hello",
-        "content02": "You have requested to change your email account to this one. Follow the link to finish the process.",
-        "content03": "Verify account"
+        "subject": "Yêu cầu thay đổi email tài khoản",
+        "content01": "Xin chào",
+        "content02": "Bạn đã yêu cầu thay đổi tài khoản email của mình thành email này. Làm theo liên kết để hoàn tất quá trình.",
+        "content03": "Xác minh tài khoản"
       },
       "forgot_password": {
-        "subject": "Reset password instructions",
-        "content01": "Hello",
-        "content02": "Someone has requested a link to change your password. You can do this through the link below.",
-        "content03": "Change my password",
-        "content04": "If you didn't request this, please ignore this email.",
-        "content05": "Your password won't change until you access the link above and create a new one."
+        "subject": "Hướng dẫn đặt lại mật khẩu",
+        "content01": "Xin chào",
+        "content02": "Ai đó đã yêu cầu liên kết để thay đổi mật khẩu của bạn. Bạn có thể làm điều này thông qua liên kết dưới đây.",
+        "content03": "Thay đổi mật khẩu của tôi",
+        "content04": "Nếu bạn không yêu cầu điều này, vui lòng bỏ qua email này.",
+        "content05": "Mật khẩu của bạn sẽ không thay đổi cho đến khi bạn truy cập liên kết trên và tạo một mật khẩu mới."
       },
       "user_info": {
-        "subject": "Welcome to Mr Install ID",
-        "content01": "Welcome to Mr Install ID! An account has been created on Mr Install ID with the following credentials: ",
+        "subject": "Chào mừng bạn đến với Mr Install ID",
+        "content01": "Chào mừng bạn đến với Mr Install ID! Một tài khoản đã được tạo trên Mr Install ID với thông tin đăng nhập sau: ",
         "content02": "Email:",
-        "content03": "Password:",
-        "content04": "Username:",
-        "content05": "You can sign in here: "
+        "content03": "Mật khẩu:",
+        "content04": "Tên đăng nhập:",
+        "content05": "Bạn có thể đăng nhập tại đây: "
       },
       "disable_2fa": {
-        "subject": "Two Factor Authentication - Mr Install ID",
-        "content01": "Hello",
-        "content02": "By clicking on the link below, you will disable Two Factor Authentication and you can access to your Mr Install ID profile",
-        "content03": "Disable Two Factor Authentication"
+        "subject": "Xác thực hai yếu tố - Mr Install ID",
+        "content01": "Xin chào",
+        "content02": "Bằng cách nhấp vào liên kết bên dưới, bạn sẽ tắt Xác thực hai yếu tố và bạn có thể truy cập vào hồ sơ Mr Install ID của mình",
+        "content03": "Tắt Xác thực hai yếu tố"
       }
     },
     "organizations": {
-      "assign_role_organization_row" :{
+      "assign_role_organization_row": {
         "li01": "Owner",
         "li02": "Member"
       }
     },
     "users": {
-      "org_role_user_row" :{
+      "org_role_user_row": {
         "li01": "Owner",
         "li02": "Member"
       }
