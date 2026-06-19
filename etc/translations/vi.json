@@ -428,20 +428,20 @@
             "warning": "Note: These attributes will be included in your public information provided to applications if you consent their use."
         },
         "new_user": {
-            "title": "Registration",
-            "alert01": "The two password fields didn't match",
-            "alert02": "Email is already used",
-            "alert03": "Email is invalid",
-            "label01": "Username",
-            "required_field": "This is a required field",
+            "title": "Đăng ký",
+            "alert01": "Hai trường mật khẩu không khớp",
+            "alert02": "Email đã được sử dụng",
+            "alert03": "Email không hợp lệ",
+            "label01": "Tên người dùng",
+            "required_field": "Trường này là bắt buộc",
             "label02": "E-mail",
-            "content01": "I have Gravatar and want to use it for my avatar.",
-            "label03": "Password",
-            "label04": "Password (again)",
-            "label05": "Captcha",
-            "signup_btn": "Sign Up",
-            "link01": "Forgot password",
-            "link02": "Confirmation not recieved?"
+            "content01": "Tôi có Gravatar và muốn sử dụng nó làm hình đại diện.",
+            "label03": "Mật khẩu",
+            "label04": "Mật khẩu (nhập lại)",
+            "label05": "Mã bảo mật",
+            "signup_btn": "Đăng Ký",
+            "link01": "Quên mật khẩu?",
+            "link02": "Chưa nhận được email xác nhận?"
         },
         "show_user": {
             "placeholder_input": "Filter",
@@ -892,26 +892,26 @@
     },
     "oauth": {
         "login": {
-            "title": "Sign In",
-            "alert01": "Session expired",
-            "alert02": "Invalid username or password.",
+            "title": "Đăng Nhập",
+            "alert01": "Phiên đăng nhập đã hết hạn",
+            "alert02": "Tên đăng nhập hoặc mật khẩu không hợp lệ.",
             "label01": "Email",
-            "label02": "Password",
-            "required_field": "This is a required field.",
-            "checkbox": "remember me",
-            "loginin_btn": "Sign In",
-            "eidas_loginin_btn": "Sign eID",
-            "link01": "Sign up",
-            "link02": "Forgot password",
-            "link03": "Confirmation not recieved?"
+            "label02": "Mật khẩu",
+            "required_field": "Trường này là bắt buộc.",
+            "checkbox": "ghi nhớ tài khoản",
+            "loginin_btn": "Đăng Nhập",
+            "eidas_loginin_btn": "Đăng Nhập eID",
+            "link01": "Đăng ký",
+            "link02": "Quên mật khẩu",
+            "link03": "Chưa nhận được email xác nhận?"
         },
         "authorize": {
-            "title": "Authorize",
-            "content01": "The application",
-            "content02": "will be able to:",
-            "content03": "Read your public information.",
-            "deny_btn": "Deny",
-            "authorize_btn": "Authorize"
+            "title": "Ủy Quyền",
+            "content01": "Ứng dụng",
+            "content02": "sẽ có thể:",
+            "content03": "Đọc thông tin công khai của bạn.",
+            "deny_btn": "Từ chối",
+            "authorize_btn": "Ủy Quyền"
         }
     },
     "modal": {

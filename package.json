@@ -43,6 +43,7 @@
     "compose_up": "docker-compose -f extras/spgdocker/docker-compose.yml up"
   },
   "dependencies": {
+    "@vitalets/google-translate-api": "^9.2.1",
     "async": "^3.2.2",
     "base64-img": "^1.0.4",
     "bcrypt": "^5.0.1",
@@ -69,8 +70,8 @@
     "http": "0.0.1-security",
     "https": "^1.0.0",
     "i18n-express": "^1.1.3",
-    "iso-639-1": "^2.1.15",
     "is-hex": "^1.1.3",
+    "iso-639-1": "^2.1.15",
     "jimp": "^0.16.1",
     "jsdom": "^19.0.0",
     "jsonwebtoken": "^8.3.0",
