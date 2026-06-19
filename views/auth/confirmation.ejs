@@ -18,6 +18,11 @@
                             <span class="help-block alert alert-danger "><%=translation.auth.confirmation.required_field%></span>
                         <% } %>
                     </div>
+                    <% if (error === 'turnstile_failed') { %>
+                        <span class="help-block alert alert-danger">Turnstile validation failed.</span>
+                    <% } %>
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAADnnuBIOhdScTtil" style="margin-top: 15px;"></div>
+                    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary"><%=translation.auth.confirmation.resend_btn%></button>

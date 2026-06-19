@@ -982,8 +982,17 @@ exports.confirmation = function (req, res) {
 };
 
 // POST /confirmation -- Send a new message of activation to the user
-exports.resend_confirmation = function (req, res) {
+exports.resend_confirmation = async function (req, res) {
   debug('--> resend_confirmation');
+
+  const is_human = await require('../../lib/turnstile.js').verifyToken(req.body['cf-turnstile-response']);
+  if (!is_human) {
+    res.render('auth/confirmation', {
+      error: 'turnstile_failed',
+      csrf_token: req.csrfToken()
+    });
+    return;
+  }
 
   if (!req.body.email) {
     res.render('auth/confirmation', {
