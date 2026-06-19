@@ -15,7 +15,7 @@
                 "content01": "Herzlich Wilkommen. Dies ist die Einstiegstour, die Sie durch die Grundlagen führt.",
                 "content02": "In diesem Bereich haben Sie Zugriff auf Ihr Profil, die Einstellungen und können sich abmelden.",
                 "content03": "Sie finden die verschiedenen Bereiche von KeyRock in dieser Seitenleiste.",
-                "content04": "Anwendungen sind die Experimente mit der FIWARE-Technologie, an denen Sie teilnehmen (z. B. als Eigentümer oder Käufer). Diese Tabelle gibt einen kurzen Überblick über sie.",
+                "content04": "Anwendungen sind die Experimente mit der Mr Install Cloud-Technologie, an denen Sie teilnehmen (z. B. als Eigentümer oder Käufer). Diese Tabelle gibt einen kurzen Überblick über sie.",
                 "content05": "Organisationen sind Gruppen von Benutzern. Sie sind sehr praktisch, wenn Sie mehrere Benutzer gleichzeitig in Ihrer Anwendung autorisieren wollen. Eine kurze Übersicht dieser Gruppen finden Sie in dieser Tabelle.",
                 "content06": "<p>Sie haben die Einstiegstour abgeschlossen! Sie können nun mit der nächsten Tour fortfahren und mehr über die wichtigsten Einstellungen Ihres Profils erfahren oder dieses Tutorial verlassen und selbst experimentieren.</p><p>Vielen Dank, dass Sie IdM Keyrock nutzen!</p><a href='#' class='next-tour' data-current-tour='initTour' data-next-tour='profileTour'> > Starte die Profil Tour</a>"
             },
@@ -130,7 +130,7 @@
         "author": "GING DIT",
         "university": " - Technische Universität Madrid (UPM)",
         "vish": "Die Nutzung der VISH-Dienste unterliegt der Annahme der",
-        "fiware": "Die Nutzung der FIWARE LAB Dienste unterliegt der Annahme der",
+        "fiware": "Die Nutzung der Mr Install Cloud LAB Dienste unterliegt der Annahme der",
         "condit02": "Nutzungsbedingungen und AGBs",
         "condit03": "Datenschutzbestimmung und",
         "condit04": "Cookie-Richtlienie"
@@ -138,10 +138,10 @@
     "help_about_items": {
         "title01": " Dokumentation",
         "content01": "Wenn Sie mehr über diesen Identity Manager und seine Verwendung erfahren möchten, klicken Sie auf die nachstehenden Links:",
-        "item01": " FIWARE Katalog",
+        "item01": " Mr Install Cloud Katalog",
         "item02": " Vollständige Dokumentation zur Installation, Verwaltung und Verwendung des Identity Managers in ReadTheDocs",
         "item03": " Quellcode des Projekts auf GitHub",
-        "item04": " FIWARE Academy",
+        "item04": " Mr Install Cloud Academy",
         "title02": " Lerntouren",
         "content02": "Sie haben eine der Touren verpasst? Möchten Sie sie wiederholen? Hier finden Sie die vollständige Liste der Touren, die Sie von den Grundlagen dieses Identity Managers bis zu einigen der fortgeschrittensten Funktionen führen.",
         "tour01": " Einstiegstour: Lernen Sie die Willkommensseite kennen.",
@@ -180,7 +180,7 @@
         },
         "presentation": {
             "title": "Identity Manager",
-            "subtitle01": "Willkommen bei einer von DIT-UPM entwickelten Implementierung von FIWARE Identity Manager.",
+            "subtitle01": "Willkommen bei einer von DIT-UPM entwickelten Implementierung von Mr Install Cloud Identity Manager.",
             "subtitle02": "Sie können diese Anmeldeseite sowie jeden anderen Stil/Layout in diesem Webservice anpassen. Sehen Sie sich die Dokumentation zur Anpassung an, um zu erfahren, wie das geht!",
             "signup_btn": "Registrieren",
             "docs_btn": "Dokumentation"

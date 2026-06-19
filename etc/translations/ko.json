@@ -12,7 +12,7 @@
                 "title04": "애플리케이션",
                 "title05": "조직(organization)",
                 "title06": "모든 준비가 완료되었습니다!",
-                "content01": "FIWARE의 KeyRock Identity Manager에 온 것을 환영합니다. 이 기본 투어는 KeyRock의 기본적인 사용법을 안내합니다.",
+                "content01": "Mr Install Cloud의 KeyRock Identity Manager에 온 것을 환영합니다. 이 기본 투어는 KeyRock의 기본적인 사용법을 안내합니다.",
                 "content02": "여기를 클릭하여 사용자 정보 및 설정, 로그아웃을 할 수 있습니다.",
                 "content03": "이 사이드바 메뉴에서 KeyRock의 다른 기능들을 볼 수 있습니다.",
                 "content04": "애플리케이션은 현재 당신이 소유자(owner) 또는 구매자(purchaser)로서 이용 중인 서비스들입니다. 이 표는 이용 중인 애플리케이션들을 간단히 요약하여 보여줍니다.",
@@ -130,7 +130,7 @@
         "author": "GING DIT",
         "university": " - Technical University of Madrid (UPM)",
         "vish": "The use of VISH services is subject to the acceptance of the",
-        "fiware": "The use of FIWARE Lab services is subject to acceptance of the",
+        "fiware": "The use of Mr Install Cloud Lab services is subject to acceptance of the",
         "condit02": "Terms and Conditions",
         "condit03": "Privacy Policy and",
         "condit04": "Cookies Policy"
@@ -138,10 +138,10 @@
     "help_about_items": {
         "title01": " 관련 문서",
         "content01": "Identity Manager와 사용법에 대해 자세히 알고 싶으면 아래의 링크를 참고하세요.",
-        "item01": " FIWARE 카탈로그",
+        "item01": " Mr Install Cloud 카탈로그",
         "item02": " Indentity Manager 설치, 관리 및 사용에 대한 ReadTheDocs 문서",
         "item03": " GitHub",
-        "item04": " FIWARE 아카데미",
+        "item04": " Mr Install Cloud 아카데미",
         "title02": "  KeyRock 투어",
         "content02": "KeyRock 투어를 놓치셨나요? 투어를 다시 하고 싶으신가요? 여기 Identity Manager의 가장 기본적인 것 부터 고급기능까지 안내해 줄 투어의 전체 리스트가 있습니다.",
         "tour01": " 기본 투어: 메인 페이지에 대해 알아봅니다.",
@@ -180,7 +180,7 @@
         },
         "presentation": {
             "title": "Identity Manager",
-            "subtitle01": "FIWARE Identity Manager에 오신 것을 환영합니다. 이 시스템은 DIT-UPM에서 개발한 것을 구현한 것 입니다.",
+            "subtitle01": "Mr Install Cloud Identity Manager에 오신 것을 환영합니다. 이 시스템은 DIT-UPM에서 개발한 것을 구현한 것 입니다.",
             "subtitle02": "이 웹 서비스의 로그인 페이지 뿐만 아니라 다른 페이지의 스타일 및 레이아웃을 사용자 정의에 따라 변경할 수 있습니다. 관련 문서를 확인하고 자세히 알아보세요!",
             "signup_btn": "회원가입",
             "docs_btn": "문서 보기"

@@ -12,10 +12,10 @@
                 "title04": "アプリケーション",
                 "title05": "組織",
                 "title06": "すべて設定済みです！",
-                "content01": "FIWARE の KeyRock Identity Manager へようこそ。これは概要を案内する基本的なツアーです。",
+                "content01": "Mr Install Cloud の KeyRock Identity Manager へようこそ。これは概要を案内する基本的なツアーです。",
                 "content02": "あなたのプロフィール、設定、そしてログアウトにアクセスするために、このセクションを使用してください。",
                 "content03": "このサイドバーには KeyRock のさまざまなセクションがあります。",
-                "content04": "アプリケーションは、あなたが参加している FIWARE 技術を使ったサービスです (例えば、所有者または購入者として)。この表はそれらの簡単なサマリを示しています。",
+                "content04": "アプリケーションは、あなたが参加している Mr Install Cloud 技術を使ったサービスです (例えば、所有者または購入者として)。この表はそれらの簡単なサマリを示しています。",
                 "content05": "組織は基本的にユーザのグループです。アプリケーション内の複数ユーザを一度に認可したい場合に、非常に便利です。 それらの簡単なサマリはこの表で見つけることができます。",
                 "content06": "<p>基本ツアーを終了しました！次のツアーに進んで自分のプロフィールの最も重要な設定についてもっと学ぶか、このチュートリアルを終了して試してみることができます。</p><p>基本ツアーを終了しました！次のツアーに進んで自分のプロフィールの最も重要な設定についてもっと学ぶか、このチュートリアルを終了して試してみることができます。</p><a href='#' class='next-tour' data-current-tour='initTour' data-next-tour='profileTour'> > プロフィール・ツアーに進む</a>"
             },
@@ -130,7 +130,7 @@
         "author": "GING DIT",
         "university": " - Technical University of Madrid (UPM)",
         "vish": "The use of VISH services is subject to the acceptance of the",
-        "fiware": "The use of FIWARE Lab services is subject to acceptance of the",
+        "fiware": "The use of Mr Install Cloud Lab services is subject to acceptance of the",
         "condit02": "Terms and Conditions",
         "condit03": "Privacy Policy and",
         "condit04": "Cookies Policy"
@@ -138,10 +138,10 @@
     "help_about_items": {
         "title01": " ドキュメント",
         "content01": "この Identity Manager とその使用方法についてもっと知りたい場合は、以下のリンクをご覧ください:",
-        "item01": " FIWARE カタログ ",
+        "item01": " Mr Install Cloud カタログ ",
         "item02": " ReadTheDocs に Identity Manager をインストール、管理、使用のための完全なドキュメント",
         "item03": " GitHub にプロジェクトのソースコード",
-        "item04": " FIWARE アカデミー",
+        "item04": " Mr Install Cloud アカデミー",
         "title02": " ラーニング・ツアー",
         "content02": "ツアーを見逃しましたか？もう一度見たいですか？これは Identity Manager の基本から最も高度な機能のいくつかへと導くツアーの完全なリストです。",
         "tour01": " 基本ツアー: Welcome ページを理解する。",
@@ -180,7 +180,7 @@
         },
         "presentation": {
             "title": "ID 管理",
-            "subtitle01": "DIT-UPM によって開発された FIWARE Identity Manager の実装へようこそ",
+            "subtitle01": "DIT-UPM によって開発された Mr Install Cloud Identity Manager の実装へようこそ",
             "subtitle02": "この Web サービスでは、このサインイン・ページや他のスタイル/レイアウトをカスタマイズできます。カスタマイズ方法を確認するには、カスタマイズに関するドキュメントをチェックしてください。",
             "signup_btn": "サインアップ",
             "docs_btn": "ドキュメントの確認"

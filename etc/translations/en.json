@@ -12,10 +12,10 @@
                 "title04": "Applications",
                 "title05": "Organizations",
                 "title06": "You're all set!",
-                "content01": "Welcome to the FIWARE's Mr Install ID Identity Manager. This is a basic tour that will guide you through the basics.",
+                "content01": "Welcome to the Mr Install Cloud's Mr Install ID Identity Manager. This is a basic tour that will guide you through the basics.",
                 "content02": "Use this section to access your profile, the settings and to sign out.",
                 "content03": "You can find the different sections of Mr Install ID in this sidebar.",
-                "content04": "Applications are the experiments with the FIWARE technology you participate on (e.g. as an owner or purchaser). This table shows a quick summary of them.",
+                "content04": "Applications are the experiments with the Mr Install Cloud technology you participate on (e.g. as an owner or purchaser). This table shows a quick summary of them.",
                 "content05": "Organizations are basically groups of users. They come in very handy when you want to authorize several users in your application at once. A quick summary of them can be found in this table.",
                 "content06": "<p>You finished the basics Tour! You can now head on to the next Tour and learn more about the most important settings of your profile or exit this tutorial and start experimenting yourself.</p><p>Thank you for using Mr Install ID!</p><a href='#' class='next-tour' data-current-tour='initTour' data-next-tour='profileTour'> > Go to Profile Tour</a>"
             },
@@ -138,10 +138,10 @@
     "help_about_items": {
         "title01": " Documentation",
         "content01": "If you want to learn more about this Identity Manager and how to use it, take a look at the links below:",
-        "item01": " FIWARE Catalogue",
+        "item01": " Mr Install Cloud Catalogue",
         "item02": " Complete documentation for installing, administrating and using the Identity Manager in ReadTheDocs",
         "item03": " Source code of the project in GitHub",
-        "item04": " FIWARE Academy",
+        "item04": " Mr Install Cloud Academy",
         "title02": " Learning Tours",
         "content02": "Missed one of the tours? Want to take them again? This is the complete list of tours that will guide you from the basics of this Identity Manager to some of the most advanced features.",
         "tour01": " Basics Tour: get to know the Welcome page.",
@@ -180,7 +180,7 @@
         },
         "presentation": {
             "title": "Identity Manager",
-            "subtitle01": "Welcome to an implementation of FIWARE Identity Manager developed by DIT-UPM.",
+            "subtitle01": "Welcome to an implementation of Mr Install Cloud Identity Manager developed by DIT-UPM.",
             "subtitle02": "You can customize this sign in page as well as any other style/layout in this web service. Check customization documentation to learn how to do it!",
             "signup_btn": "Sign up",
             "docs_btn": "Check documentation"

@@ -12,7 +12,7 @@
                 "title04": "Aplicaciones",
                 "title05": "Organizaciones",
                 "title06": "¡Ya está todo listo!",
-                "content01": "Bienvenido a KeyRock Identity Manager de FIWARE. Este es un tour básico que le guiará a través de los conceptos básicos",
+                "content01": "Bienvenido a KeyRock Identity Manager de Mr Install Cloud. Este es un tour básico que le guiará a través de los conceptos básicos",
                 "content02": "Use esta sección para acceder a su perfil, la configuración y para cerrar sesión",
                 "content03": "Puede encontrar las diferentes secciones de KeyRock en esta barra lateral.",
                 "content04": "Las aplicaciones son los servicos en los que participa (por ejemplo, como propietario o purchaser). Esta tabla muestra un resumen rápido de ellas.",
@@ -97,7 +97,7 @@
                 "content11": "Haga clic en este botón para guardar los cambios que ha realizado.",
                 "content12": "Esta sección muestra los usuarios a los que se les ha asignado algún rol en su aplicación. Use el botón 'Autorizar' para asignar un nuevo rol a un determinado usuario",
                 "content13": "Esta sección muestra las organizaciones a las que se les ha asignado algún rol en su aplicación. Use el botón  'Autorizar' para asignar un nuevo rol a una determinada organización",
-                "content14": "<p> ¡Terminaste el Tour de roles y permisos! Ahora puedes dirigirte al próximo Tour y aprender más sobre las organizaciones, o salir de este tutorial y comenzar a experimentar tú mismo. </p> <p> Gracias por usar ¡Laboratorio de FIWARE! </p> <a href='#' class='next-tour' data-current-tour='rolesTour' data-next-tour='orgsTour'>> Ir al Tour de organizaciones </a>"
+                "content14": "<p> ¡Terminaste el Tour de roles y permisos! Ahora puedes dirigirte al próximo Tour y aprender más sobre las organizaciones, o salir de este tutorial y comenzar a experimentar tú mismo. </p> <p> Gracias por usar ¡Laboratorio de Mr Install Cloud! </p> <a href='#' class='next-tour' data-current-tour='rolesTour' data-next-tour='orgsTour'>> Ir al Tour de organizaciones </a>"
             },
             "orgs_tour": {
                 "title01": "¡Comencemos!",
@@ -130,7 +130,7 @@
         "author": "GING DIT",
         "university": " - Universidad Politénica de Madrid (UPM)",
         "vish": "El uso de los servicios de VISH está sujeto a la aceptación de los",
-        "fiware": "El uso de los servicios de FIWARE Lab está sujeto a la aceptación de los",
+        "fiware": "El uso de los servicios de Mr Install Cloud Lab está sujeto a la aceptación de los",
         "condit02": "Términos y Condiciones",
         "condit03": "Política de privacidad y",
         "condit04": "Política de cookies"
@@ -138,10 +138,10 @@
     "help_about_items": {
         "title01": " Documentación",
         "content01": "Si quieres aprender más acerca de este Gestor de Identidad y cómo usarlo, echa un vistazo a los links acontinuación:",
-        "item01": " Catálogo de FIWARE",
+        "item01": " Catálogo de Mr Install Cloud",
         "item02": " Documentación completa para la instalación, administración y uso del Gestor de Identidad en ReadTheDocs",
         "item03": " Código fuente del proyecto en GitHub",
-        "item04": " Academia de FIWARE",
+        "item04": " Academia de Mr Install Cloud",
         "title02": " Tours de aprendizaje",
         "content02": "¿Te has perdido alguno de los tours? ¿Quieres hacerlos de nuevo? Aquí puedes ver la lista completa de tours que te guiarán de las características básicas a las más avanzadas.",
         "tour01": " Tour básico: empieza a conocer la página de bienvenida.",
@@ -180,7 +180,7 @@
         },
         "presentation": {
             "title": "Gestor de Identidad",
-            "subtitle01": "Bienvenido al Gestor de Identidades de FIWARE, desarrollado por la UPM.",
+            "subtitle01": "Bienvenido al Gestor de Identidades de Mr Install Cloud, desarrollado por la UPM.",
             "subtitle02": "Puedes personalizar esta página de login, como también cualquier otro estilo de la aplicación. ¡Revisa la documentación acerca de la personalización de estilos para aprender cómo hacerlo!.",
             "signup_btn": "Registrarte",
             "docs_btn": "Ir a la documentación"
