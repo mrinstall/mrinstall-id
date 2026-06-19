@@ -1,83 +1,126 @@
-/****************************** Custom styles rewrite */
+/****************************** Custom styles rewrite (Dark Glassmorphism) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --color-gold-100: #fef3c7;
-  --color-gold-300: #fce68a;
   --color-gold-400: #fbbf24;
   --color-gold-500: #f59e0b;
   --color-gold-600: #d97706;
-  --color-gold-900: #78350f;
 }
 
 body {
-  background-color: #f3f4f6;
-  color: #1f2937;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #050505 !important;
+  color: #ffffff !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  background-image: radial-gradient(circle at 25% 25%, rgba(245, 158, 11, 0.05) 0%, transparent 40%),
+                    radial-gradient(circle at 75% 75%, rgba(245, 158, 11, 0.02) 0%, transparent 40%);
+  background-attachment: fixed;
 }
 
-.panel, .modal-content, .login, .registration {
-  background: #ffffff !important;
-  border: 1px solid #e5e7eb !important;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01) !important;
-  color: #1f2937 !important;
-  border-radius: 12px;
+/* Base structural elements */
+.panel, .modal-content, .login, .registration, .well {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: #ffffff !important;
+  border-radius: 20px !important;
 }
 
 .panel-heading, .modal-header {
-  background: #f9fafb !important;
-  border-bottom: 1px solid #e5e7eb !important;
-  color: #111827 !important;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border-radius: 20px 20px 0 0 !important;
 }
 
+.panel-footer, .modal-footer {
+  background: transparent !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 0 0 20px 20px !important;
+}
+
+/* Forms and Inputs */
 .form-control {
-  background: #f9fafb !important;
-  border: 1px solid #d1d5db !important;
-  color: #1f2937 !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 10px 15px !important;
+  height: auto !important;
+  transition: all 0.3s ease !important;
 }
 
 .form-control:focus {
   outline: none !important;
-  border-color: #f59e0b !important;
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2) !important;
-  background: #ffffff !important;
+  border-color: rgba(245, 158, 11, 0.5) !important;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
+.form-control::placeholder {
+  color: #71717a !important;
+}
+
+/* Buttons */
 .btn-primary {
-  background-color: #f59e0b !important;
-  border-color: #d97706 !important;
-  color: #ffffff !important;
-  font-weight: 600;
+  background: linear-gradient(to right, #d97706, #fbbf24) !important;
+  border: none !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+  padding: 10px 20px !important;
+  transition: all 0.3s ease !important;
 }
 
 .btn-primary:hover {
-  background-color: #d97706 !important;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.4) !important;
 }
 
-/* Fix text colors for light theme */
-h1, h2, h3, h4, h5, h6, label {
-  color: #111827 !important;
+.btn-default {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
 }
 
-p, span, div, td, th {
-  color: #374151;
+.btn-default:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6, label, p, span, div, td, th {
+  color: #ffffff;
+}
+
+.text-muted, .help-block {
+  color: #a1a1aa !important;
 }
 
 a {
-  color: #d97706;
+  color: #fbbf24 !important;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #b45309;
+  color: #fcd34d !important;
+  text-decoration: none !important;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: #4b5563;
+/* Auth Layout overrides */
+.login, .registration {
+  max-width: 450px !important;
+  margin: 80px auto !important;
+  float: none !important;
+  width: 100% !important;
+  padding: 30px !important;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: #d97706;
+.login form label, .registration form label {
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
 }
 
 .presentation .media {
@@ -87,9 +130,26 @@ a:hover {
   margin-top: 15px;
 }
 
-.login, .registration {
-  max-width: 450px;
-  margin: 50px auto;
-  float: none;
-  width: 100%;
+/* Fix navbar */
+.navbar-default {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.navbar-default .navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #e4e4e7 !important;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fbbf24 !important;
+}
+
+/* List groups */
+.list-group-item {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
