@@ -137,6 +137,14 @@ a:hover {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
+.logo-header .brand {
+  display: none !important;
+}
+.brand-text {
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
 .navbar-default .navbar-brand {
   color: #ffffff !important;
   font-weight: 700;
