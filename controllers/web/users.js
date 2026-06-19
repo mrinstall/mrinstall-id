@@ -540,8 +540,18 @@ exports.new = function (req, res) {
 };
 
 // POST /sign_up -- Create new user
-exports.create = function (req, res) {
+exports.create = async function (req, res) {
   debug('--> create');
+
+  const is_human = await require('../../lib/turnstile.js').verifyToken(req.body['cf-turnstile-response']);
+  if (!is_human) {
+    res.locals.message = { text: ' Turnstile validation failed.', type: 'danger' };
+    return res.render('users/new', {
+      user_info: {},
+      errors: [],
+      csrf_token: req.csrfToken()
+    });
+  }
 
   if (config.email_list_type && req.body.email) {
     if (config.email_list_type === 'whitelist' && !email_list.includes(req.body.email.split('@')[1])) {
@@ -767,8 +777,17 @@ exports.password_request = function (req, res) {
 };
 
 // POST /password/request -- Send an email with instructions to reset password
-exports.password_send_email = function (req, res) {
+exports.password_send_email = async function (req, res) {
   debug('--> password_send_email');
+
+  const is_human = await require('../../lib/turnstile.js').verifyToken(req.body['cf-turnstile-response']);
+  if (!is_human) {
+    res.render('auth/password_request', {
+      error: 'turnstile_failed',
+      csrf_token: req.csrfToken()
+    });
+    return;
+  }
 
   if (!req.body.email) {
     res.render('auth/password_request', {
@@ -868,10 +887,15 @@ exports.new_password = function (req, res) {
 };
 
 // POST /password/reset -- Set new password in database
-exports.change_password = function (req, res) {
+exports.change_password = async function (req, res) {
   debug('--> change_password');
 
   const errors = [];
+
+  const is_human = await require('../../lib/turnstile.js').verifyToken(req.body['cf-turnstile-response']);
+  if (!is_human) {
+    errors.push('turnstile_failed');
+  }
 
   // If password new is empty push an error into the array
   if (req.body.password1 === '') {

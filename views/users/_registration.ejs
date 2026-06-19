@@ -71,31 +71,10 @@
 				<% if (nameErrors.indexOf("password2") != -1) { %>
 			        <span class="help-block alert alert-danger "><%=translation.users.new_user.required_field%></span>
 			    <% } %>
-				<div class="form-group ">
-					<label class="control-label" for="id_captcha"><%=translation.users.new_user.label05%></label>
-					<!-- <div class="g-recaptcha" data-size="normal" data-sitekey="6LcgXvwSAAAAAES48096Gr2KKc6cjWlVWtIcDZvz"></div>
-					<noscript>
-						<div style="width: 302px; height: 352px;">
-							<div style="width: 302px; height: 352px; position: relative;">
-								<div style="width: 302px; height: 352px; position: absolute;">
-									<iframe src="https://www.google.com/recaptcha/api/fallback?k=6LcgXvwSAAAAAES48096Gr2KKc6cjWlVWtIcDZvz"
-										frameborder="0" scrolling="no"
-										style="width: 302px; height:352px; border-style: none;">
-									</iframe>
-								</div>
-								<div style="width: 250px; height: 80px; position: absolute; border-style: none;
-									bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">
-									<textarea id="g-recaptcha-response" name="g-recaptcha-response"
-										class="g-recaptcha-response"
-										style="width: 250px; height: 80px; border: 1px solid #c1c1c1;
-										margin: 0px; padding: 0px; resize: none;" value="">
-									</textarea>
-								</div>
-							</div>
-						</div>
-					</noscript> -->
+				<div class="form-group" style="display: flex; justify-content: center;">
+					<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+					<div class="cf-turnstile" data-sitekey="0x4AAAAAADnnuBIOhdScTtil"></div>
 				</div>
-				<script src="https://www.google.com/recaptcha/api.js?hl=en-GB" async defer></script>
 			</div>
 			<div class="modal-footer">
 				<label class="conditions checkbox-inline">

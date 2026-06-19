@@ -42,6 +42,10 @@
             <% if (nameErrors.indexOf("password") != -1) { %>
                 <span class="help-block alert alert-danger "><%=translation.auth.login.required_field%></span>
             <% } %>
+            <div class="form-group" style="display: flex; justify-content: center;">
+                <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAADnnuBIOhdScTtil"></div>
+            </div>
         </div>
         <div class="modal-footer">
             <div class="checkbox">

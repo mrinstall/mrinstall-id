@@ -12,6 +12,7 @@ const Speakeasy = require('speakeasy');
 
 const escape_paths = require('../../etc/escape_paths/paths.json').paths;
 const email = require('../../lib/email.js');
+const turnstile = require('../../lib/turnstile.js');
 
 // MW to authorized restricted http accesses
 exports.login_required = function (req, res, next) {
@@ -83,8 +84,15 @@ exports.new = function (req, res) {
 };
 
 // POST /auth/login -- Create Session
-exports.create = function (req, res) {
+exports.create = async function (req, res) {
   debug('--> create');
+
+  const is_human = await turnstile.verifyToken(req.body['cf-turnstile-response']);
+  if (!is_human) {
+    req.session.errors = [{ message: 'Turnstile validation failed' }];
+    res.redirect('/auth/login');
+    return;
+  }
 
   // If inputs email or password are empty create an array of errors
   const errors = [];
