@@ -42,9 +42,9 @@ body {
 
 /* Forms and Inputs */
 .form-control {
-  background: rgba(0, 0, 0, 0.4) !important;
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
-  color: #ffffff !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #000000 !important;
   border-radius: 12px !important;
   padding: 10px 15px !important;
   height: auto !important;
@@ -53,13 +53,13 @@ body {
 
 .form-control:focus {
   outline: none !important;
-  border-color: rgba(245, 158, 11, 0.5) !important;
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1) !important;
-  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: rgba(245, 158, 11, 0.8) !important;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3) !important;
+  background: #ffffff !important;
 }
 
 .form-control::placeholder {
-  color: #71717a !important;
+  color: #9ca3af !important;
 }
 
 /* Buttons */
