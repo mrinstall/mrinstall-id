@@ -91,8 +91,13 @@ body {
 }
 
 /* Typography Overrides */
-h1, h2, h3, h4, h5, h6, label, p, span, div, td, th {
-  color: #ffffff;
+h1, h2, h3, h4, h5, h6, label, p, span, div, td, th, li {
+  color: #f4f4f5 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+  font-weight: 600 !important;
 }
 
 .text-muted, .help-block {
