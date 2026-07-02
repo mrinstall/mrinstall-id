@@ -9,7 +9,7 @@
   <title>
     <%= site.title %>
   </title>
-  <script src="/javascripts/jquery-3.2.1.min.js"></script>
+  <script src="/javascripts/jquery-3.7.1.min.js"></script>
   <script src="/javascripts/jquery.Jcrop.min.js"></script>
   <script src="/javascripts/jquery.bootpag.min.js"></script>
   <script src="/javascripts/jquery.timepicker.js"></script>
@@ -24,9 +24,15 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel='stylesheet' href='/stylesheets/bootstrap-select.min.css' />
 
+  <script type="application/json" id="navigation-data">
+    <%- JSON.stringify(translation.generic.navigation) %>
+  </script>
+  <script type="application/json" id="tours-data">
+    <%- JSON.stringify(translation.generic.tours) %>
+  </script>
   <script>
-    var navigation = <%- JSON.stringify(translation.generic.navigation) %>
-    var tours = <%- JSON.stringify(translation.generic.tours) %>
+    var navigation = JSON.parse(document.getElementById('navigation-data').textContent);
+    var tours = JSON.parse(document.getElementById('tours-data').textContent);
   </script>
 
   <script src="/javascripts/tour.js"></script>
