@@ -34,10 +34,25 @@ router.get('/:user_id', csrf_protection, web_user_controller.show);
 router.get('/:user_id/organizations', csrf_protection, web_user_controller.get_organizations);
 router.get('/:user_id/applications', csrf_protection, web_user_controller.get_applications);
 router.get('/:user_id/edit', web_user_controller.owned_permissions, csrf_protection, web_user_controller.edit);
+const { body, validationResult } = require('express-validator');
+
 router.put(
   '/:user_id/edit/info',
   web_user_controller.owned_permissions,
   csrf_protection,
+  [
+    body('user.username').isString().trim().notEmpty().escape(),
+    body('user.description').optional({ checkFalsy: true }).isString().trim().escape(),
+    body('user.website').optional({ checkFalsy: true }).isString().trim().escape()
+  ],
+  function (req, res, next) {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      req.session.message = { text: ' User update failed due to invalid input.', type: 'danger' };
+      return res.redirect('/idm/users/' + req.session.user.id);
+    }
+    next();
+  },
   web_user_controller.update_info
 );
 router.post(

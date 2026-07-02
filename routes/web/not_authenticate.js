@@ -7,8 +7,30 @@ const csrf_protection = csrf({ cookie: true });
 const web_user_controller = require('../../controllers/web/index').users;
 
 // Routes for users creation
+const { body, validationResult } = require('express-validator');
+
 router.get('/sign_up', csrf_protection, web_user_controller.new);
-router.post('/sign_up', csrf_protection, web_user_controller.create);
+router.post('/sign_up',
+  csrf_protection,
+  [
+    body('username').isString().trim().notEmpty().escape(),
+    body('email').isEmail().normalizeEmail(),
+    body('password1').isLength({ min: 8 }).withMessage('Password must be at least 8 characters'),
+    body('password2').isLength({ min: 8 }).withMessage('Password must be at least 8 characters')
+  ],
+  function (req, res, next) {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.render('users/new', {
+        user_info: req.body,
+        errors: errors.array(),
+        csrf_token: req.csrfToken()
+      });
+    }
+    next();
+  },
+  web_user_controller.create
+);
 router.get('/activate', csrf_protection, web_user_controller.activate);
 router.get('/password/request', csrf_protection, web_user_controller.password_request);
 router.post('/password/request', csrf_protection, web_user_controller.password_send_email);

@@ -64,6 +64,7 @@
     "express-partials": "^0.3.0",
     "express-session": "^1.17.2",
     "express-useragent": "^1.0.13",
+    "express-validator": "^7.3.2",
     "get-user-agent": "^4.0.0",
     "gravatar": "^1.8.2",
     "helmet": "^5.0.1",
